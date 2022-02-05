@@ -1,0 +1,15 @@
+header {
+    text-align: center;
+    background-image: linear-gradient(to right, hsl(211, 99%, 35%), hsl(260, 67%, 17%));
+    color: white;
+}
+
+.city-search {
+    border-bottom: 5px;
+    margin: 0;
+}
+
+.current-weather {
+    text-align: center;
+    align-items: center;
+}
