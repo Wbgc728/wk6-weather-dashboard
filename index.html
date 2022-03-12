@@ -20,8 +20,7 @@
         <!-- Main Container -->
         <div class="container-fluid">
             <!-- Row - Contains City Search and Current Weather -->
-            <div class="row">
-
+            <div class="row mx-auto">
                 <!-- City Search and Previous Searches Column -->
                 <div class="col-3">
                     <!-- City Search -->
@@ -31,7 +30,7 @@
                             <!-- City Input Form -->
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
-                                    <input type="text" id="city-input" class="form-control" placeholder="Enter a City">
+                                    <input type="text" class="form-control city-input" placeholder="Enter a City">
                                 </div>
                                 <!-- Submit -->
                                 <button href="#" type="button" class="btn btn-primary city-submit">Search</button>
@@ -41,12 +40,12 @@
                         <!-- Previous Searches -->
                         <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <div id="previous-searches">
-                                    <button type="button" class="buttonPrev1 btn btn-primary btn-lg btn-block" hidden></button>
-                                    <button type="button" class="buttonPrev2 btn btn-primary btn-lg btn-block" hidden></button>
-                                    <button type="button" class="buttonPrev3 btn btn-primary btn-lg btn-block" hidden></button>
-                                    <button type="button" class="buttonPrev4 btn btn-primary btn-lg btn-block" hidden></button>
-                                    <button type="button" class="buttonPrev5 btn btn-primary btn-lg btn-block" hidden></button>
+                                <div>
+                                    <button type="button" class="previous-searches buttonPrev1 btn btn-primary btn-lg btn-block" hidden></button>
+                                    <button type="button" class="previous-searches buttonPrev2 btn btn-primary btn-lg btn-block" hidden></button>
+                                    <button type="button" class="previous-searches buttonPrev3 btn btn-primary btn-lg btn-block" hidden></button>
+                                    <button type="button" class="previous-searches buttonPrev4 btn btn-primary btn-lg btn-block" hidden></button>
+                                    <button type="button" class="previous-searches buttonPrev5 btn btn-primary btn-lg btn-block" hidden></button>
 
 
                                 </div>
@@ -56,28 +55,69 @@
                 </div>
 
                 <!-- Current City Weather Column -->
-                <div class="col-8 current-weather" hidden>
-                    <div class="row">
-                        <div class="card" style="width: auto;">
-                            <h5 class="card-title"></h5>
-                        </div>
+                <div class="col current-weather" hidden>
+                    <div class="card" style="width: auto;">
+                        <h5 class="card-title current-city"></h5>
+                        <br>
+                        <li class="current-temp"></li>
+                        <br>
+                        <li class="current-wind"></li>
+                        <br>
+                        <li class="current-humidity"></li>
+                        <br>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Separate Row for 5 Day Forcast -->
-            <div class="row five-day">
-                <div class="col" id="day-0-forecast">
-                    <div class="card-header city-submit" id="today-date">DATE:</div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item" id="today-icon">Icon:</li>
-                        <li class="list-group-item" id="today-temp">Temp:</li>
-                        <li class="list-group-item" id="today-wind">Wind:</li>
-                        <li class="list-group-item" id="today-humidity">Humidity:</li>
-                    </ul>
-                </div>
+        <!-- Separate Row for 5 Day Forcast -->
+        <div class="row five-day mx-auto mt-3">
+            <div class="col">
+                <div class="card-header city-submit today-date">DATE:</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item today-temp">Temp:</li>
+                    <li class="list-group-item today-wind">Wind:</li>
+                    <li class="list-group-item today-humidity">Humidity:</li>
+                </ul>
             </div>
 
+            <div class="col">
+                <div class="card-header city-submit one-date">DATE:</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item one-temp">Temp:</li>
+                    <li class="list-group-item one-wind">Wind:</li>
+                    <li class="list-group-item one-humidity">Humidity:</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <div class="card-header city-submit two-date">Date:</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item two-temp">Temp:</li>
+                    <li class="list-group-item two-wind">Wind:</li>
+                    <li class="list-group-item two-humidity">Humidity:</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <div class="card-header city-submit three-date">Date:</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item three-temp">Temp:</li>
+                    <li class="list-group-item three-wind">Wind:</li>
+                    <li class="list-group-item three-humidity">Humidity:</li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <div class="card-header city-submit four-date">Date:</div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item four-temp">Temp:</li>
+                    <li class="list-group-item four-wind">Wind:</li>
+                    <li class="list-group-item four-humidity">Humidity:</li>
+                </ul>
+            </div>
+
+        </div>
         </div>
     </main>
 
